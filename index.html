@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          container: {
+            center: true,
+          },
+          extend: {
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-slate-800 ">
+    <!-- navbar -->
+    <nav class="bg-slate-800 text-white p-4 shadow-md fixed w-full top-0 z-10">
+      <div class="container mx-auto flex flex-wrap justify-between items-center">
+        <a href="#" class="text-2xl font-bold ">Fana <span class="text-teal-400">Kurniawan</span></a>
+        <ul class="flex flex-wrap space-x-4 md:space-x-9">
+          <li><a href="#" class="hover:text-teal-500 transition duration-300">Home</a></li>
+          <li><a href="#about" class="hover:text-teal-500 transition duration-300">About</a></li>
+          <li><a href="#service" class="hover:text-teal-500 transition duration-300">Service</a></li>
+          <li><a href="#skils" class="hover:text-teal-500 transition duration-300">Skill</a></li>
+          <li><a href="#portfolio" class="hover:text-teal-500 transition duration-300">Portfolio</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- hero section -->
+    <section >
+      <div class="container px-4 md:px-20 flex items-center h-[100vh] flex-wrap justify-center">
+        <!-- text -->
+        <div class="md:w-1/2 w-full text-start text-gray-50">
+          <h1 class="font-bold text-xl mb-1">hello👋<p class="text-4xl">FANA ARDI KURNIAWAN</p></h1>
+          <p class="text-xl font-semibold mb-2">Im <span class="text-teal-400 typing"></span></p>
+          <p class="mb-[20px]">Hai! Selamat datang di halaman saya. Saya seorang pengembang yang suka bermain dengan kode dan teknologi. Yuk, kita ngobrol dan lihat bagaimana saya bisa membantu proyek kamu!</p>
+          <div class=" flex">  
+            <a href="https://wa.me/6281392439304" target="_blank" class="bg-teal-400 text-gray-900 font-semibold px-4 py-2 rounded-full hover:bg-teal-500 hover:rounded-md transition-all ease-in-out duration-300 shadow-sm shadow-teal-500">Contact me</a>
+            <div class="flex items-center ms-3">
+              <!-- tiktok -->
+              <a
+                href="https:/tiktok.com/fanakurniawan2"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white transition-transform transform hover:scale-110"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>TikTok</title>
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </a>
+              <!-- instagram -->
+
+              <a
+                href="https:/instagram.com"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white transition-transform transform hover:scale-110"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+              <!--  github -->
+              <a
+                href="https:/github.com"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white transition-transform transform hover:scale-110"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+              <!-- discord -->
+              <a
+                href="https:/discord.com"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border hover:border-primary hover:bg-primary hover:text-white transition-transform transform hover:scale-110"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Discord</title>
+                  <path
+                    d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- image -->
+        <div class="md:w-1/2 w-full flex justify-center items-center">
+          <div class="w-[250px] h-[250px] md:w-[300px] md:h-[300px] rounded-full border-4 border-teal-400 shadow-[0px_20px_90px_rgba(45,212,191)] flex items-center justify-center bg-[url(assets/foto.png)] bg-cover md:animate-bounce hover:animate-none sm:animate-none">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+     <!-- about section -->
+     <section id="about">
+       <div class="container px-4 md:px-20 flex items-center h-[100vh] flex-wrap justify-center">
+         <div class="w-full md:w-[1000px] md:h-[400px] sm:h-[600px] border-2 border-teal-400 rounded-md  flex items-center flex-col shadow-[4.0px_8.0px_8.0px_rgba(45,212,191)]">
+           <!-- text-heading -->
+           <h1 class="font-bold text-3xl mb-1  text-slate-50 mt-2 ">about me</h1>
+           <div class="items-center">
+             <hr class="w-56 border-2 border-teal-400">
+           </div>
+           <!-- content -->
+           <div class="flex flex-wrap w-full h-full">
+             <div class="w-full md:w-1/2 flex justify-center items-center">
+               <div class="w-[270px] h-[270px] rounded-full hover:rounded-md transition-all duration-500 ease-in-out border-4 border-teal-400 flex justify-center items-center bg-[url(assets/foto.png)] bg-cover transform hover:scale-105"></div>
+             </div>
+             <!-- text-content -->
+             <div class="w-full md:w-1/2 flex flex-col justify-center pe-6">
+               <p class="mb-2 text-slate-50 font-semibold text-base ">Saya adalah seorang pelajar SMK yang sangat menyukai dunia pemrograman. Sejak di bangku SMP, saya telah mulai belajar coding dan mengeksplorasi berbagai bahasa pemrograman seperti HTML, CSS, dan JavaScript. Ketertarikan saya terhadap teknologi membuat saya terus berusaha untuk meningkatkan keterampilan saya dalam pengembangan perangkat lunak dan menciptakan proyek-proyek yang bermanfaat.</p>
+               <!-- button -->
+                <a href="#" class="w-auto bg-teal-400 text-gray-900 font-semibold px-4 py-2 rounded-full hover:bg-teal-500 hover:rounded-md transition-all ease-in-out duration-300 shadow-sm shadow-teal-500 text-center">View My Projects</a>
+             </div>
+           </div>
+         </div>
+       </div>
+     </section>
+     <!-- about end -->
+    <!-- service -->
+      <section id="service"> 
+       <div class="container h-[80vh] items-center flex justify-center">
+          <div class="flex flex-col justify-center items-center  ">
+            <!-- heading -->
+            <h1 class="font-bold text-3xl mb-3 text-slate-50 mt-2">service</h1>
+            <div class="items-center mb-4">
+              <hr class="w-[630px] border-2 border-teal-400">
+            </div>
+            <!-- card -->
+            <div class="flex flex-wrap gap-10 justify-center">
+              <div class="w-[300px] h-[300px] bg-slate-950 flex items-center justify-center flex-col text-white text-lg font-semibold transition-transform duration-300 transform hover:scale-105 ">
+                <svg width="100px" height="100px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#2dd4bf" stroke="#2dd4bf"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><style>.a,.b{fill:none;stroke:#2dd4bf;stroke-linecap:round;stroke-linejoin:round;}.c{fill:#2dd4bf;}</style></defs><path class="a" d="M21.5552,32.77c-.5433,3.3829-6.7607,2.1322-7.7066,4.3376-.5888,1.3728,1.5686,5.132.0118,5.1376-3.428.0124-8.3029-4.9289-8.36-8.6243-.0568-3.7075,2.7535-7.5107,8.214-7.6242,3.6313-.0755,8.915,1.8785,7.84,6.7733"></path><path class="a" d="M32.9757,21.8346c.2,2.2473-1.9434,4.2768-4.794,4.5385s-5.3341-1.3428-5.5535-3.5883c-.1084-1.1092,4.0026,1.356,3.6715.2282-.1019-.3473-1.2625-4.25,2.148-4.7917A3.6625,3.6625,0,0,1,32.97,21.78"></path><path class="b" d="M41.7741,6.2082h0a2.5988,2.5988,0,0,1-.0279,3.6383L36.501,16.1584a2.599,2.599,0,0,1-3.5718.6933h0a2.599,2.599,0,0,1,.0279-3.6384l5.2452-6.3118A2.5988,2.5988,0,0,1,41.7741,6.2082Z"></path><circle class="c" cx="18.4422" cy="30.3273" r="0.75"></circle><circle class="c" cx="15.9119" cy="28.9246" r="0.75"></circle><circle class="c" cx="13.154" cy="28.5423" r="0.75"></circle><circle class="c" cx="10.6739" cy="29.4979" r="0.75"></circle><circle class="c" cx="8.8852" cy="31.672" r="0.75"></circle></g></svg>
+                <p class="mt-2 text-xl">Modern UI</p>
+              </div>
+              <div class="w-[300px] h-[300px] bg-slate-950 border-2 border-teal-400 flex items-center justify-center flex-col text-white text-lg font-semibold transition-transform duration-300 transform hover:scale-105 ">
+                <svg width= "100" height="100" fill="#2dd4bf" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M17.5 15c-.797 0-1.456.314-1.88.793-.424.48-.62 1.098-.62 1.707 0 .78-.568 1.418-.81 1.607-.372.294-.165.892.31.893H17c.786 0 1.517-.23 2.072-.662.555-.432.928-1.09.928-1.838 0-.683-.193-1.32-.63-1.785C18.93 15.25 18.273 15 17.5 15zm0 1c.57 0 .914.16 1.14.4.227.24.36.602.36 1.1 0 .432-.19.776-.54 1.05-.353.272-.872.45-1.46.45h-1.423c.237-.4.422-.9.422-1.5 0-.39.13-.772.368-1.043.24-.27.583-.457 1.132-.457zM29.284 5.01c-.126.015-.233.048-.352.09-.238.08-.513.21-.838.374-.65.33-1.477.813-2.35 1.365-1.75 1.103-3.66 2.457-4.642 3.438-.935.934-1.616 1.784-1.936 2.637-.32.852-.186 1.777.478 2.44.665.665 1.59.8 2.442.48.853-.32 1.703-1.002 2.637-1.936.98-.983 2.335-2.893 3.44-4.64.552-.876 1.035-1.704 1.365-2.353.165-.324.293-.6.375-.838.04-.12.072-.226.086-.352.013-.126.047-.327-.167-.54-.214-.215-.413-.18-.54-.167zm-.647 1.444c-.307.603-.78 1.416-1.32 2.27-1.08 1.713-2.46 3.628-3.3 4.468-.888.887-1.678 1.48-2.283 1.707-.604.225-.954.177-1.383-.25-.427-.43-.475-.78-.25-1.384.228-.604.82-1.394 1.71-2.28.84-.84 2.754-2.22 4.466-3.3.856-.542 1.668-1.015 2.272-1.322.134-.036.13.022.09.09zM2.5 8h17c.277 0 .5.223.5.5s-.223.5-.5.5h-17c-.277 0-.5-.223-.5-.5s.223-.5.5-.5zM7 6.5c0 .276-.224.5-.5.5S6 6.776 6 6.5s.224-.5.5-.5.5.224.5.5zm-2 0c0 .276-.224.5-.5.5S4 6.776 4 6.5s.224-.5.5-.5.5.224.5.5zm-2 0c0 .276-.224.5-.5.5S2 6.776 2 6.5s.224-.5.5-.5.5.224.5.5zM1.5 4C.678 4 0 4.678 0 5.5v19c0 .822.678 1.5 1.5 1.5h25c.822 0 1.5-.678 1.5-1.5v-12c0-.668-1-.665-1 0v12c0 .286-.214.5-.5.5h-25c-.286 0-.5-.214-.5-.5v-19c0-.286.214-.5.5-.5h25c.665 0 .657-1 0-1z"></path></g></svg>
+                <p class="mt-2 text-xl">Interaktif web</p>
+              </div>
+              <div class="w-[300px] h-[300px] bg-slate-950 flex items-center justify-center flex-col text-white text-lg font-semibold text-center transition-transform duration-300 transform hover:scale-105 ">
+                <svg fill="#2dd4bf" width="100px" height="100px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" id="Layer_1" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M226.335,309.491c-1.727,0-3.453-0.446-5-1.34c-3.094-1.786-5-5.088-5-8.66v-86.982c0-3.572,1.906-6.874,5-8.66 c3.094-1.787,6.905-1.787,10,0l75.33,43.49c3.094,1.786,5,5.088,5,8.66s-1.906,6.874-5,8.66l-75.33,43.492 C229.788,309.045,228.062,309.491,226.335,309.491z M236.335,229.829v52.342l45.33-26.172L236.335,229.829z"></path> </g> <g> <path d="M352,461.5H160c-12.131,0-22-9.869-22-22v-367c0-12.131,9.869-22,22-22h192c12.131,0,22,9.869,22,22v367 C374,451.631,364.131,461.5,352,461.5z M160,70.5c-1.103,0-2,0.897-2,2v367c0,1.103,0.897,2,2,2h192c1.103,0,2-0.897,2-2v-367 c0-1.103-0.897-2-2-2H160z"></path> </g> <g> <path d="M352,461.5H160c-12.131,0-22-9.869-22-22v-37.664c0-12.132,9.869-22.001,22-22.001h192c12.131,0,22,9.869,22,22.001V439.5 C374,451.631,364.131,461.5,352,461.5z M160,399.835c-1.103,0-2,0.897-2,2.001V439.5c0,1.103,0.897,2,2,2h192c1.103,0,2-0.897,2-2 v-37.664c0-1.104-0.897-2.001-2-2.001H160z"></path> </g> <g> <path d="M270.667,430.668h-25.333c-5.523,0-10-4.478-10-10s4.477-10,10-10h25.333c5.523,0,10,4.478,10,10 S276.189,430.668,270.667,430.668z"></path> </g> <g> <path d="M264,99.164h-32.667c-5.523,0-10-4.478-10-10s4.477-10,10-10H264c5.523,0,10,4.478,10,10S269.523,99.164,264,99.164z"></path> </g> </g> </g></svg>
+                <p class="mt-2 text-xl">Responsive apps</p>
+              </div>
+            </div>
+          </div>
+       </div>
+     <!-- service end -->
+      <!-- skils -->
+        <section id="skils">
+          <div class="container h-[100vh] flex justify-center items-center">
+            <div class="w-[62rem] h-[30rem]">
+              <div class="grid grid-cols-1 justify-items-center h-auto">
+                <h1 class="font-bold text-slate-50 text-3xl">Tech stack</h1>
+              </div>
+              <div class="grid grid-cols-3 gap-5 mt-3">
+                <!-- cards 1-->
+                <div class="bg-transparent border-2 border-teal-500 p-4 rounded-lg shadow-lg text-center text-white font-semibold transition-transform duration-300 transform hover:scale-105">
+                  <img src="assets/html-5.png" alt="HTML Logo" class="w-24 h-24 mx-auto mb-2 hover:filter-none filter grayscale">
+                  HTML
+                </div>
+                <div class="bg-transparent border-2 border-teal-500 p-4 rounded-lg shadow-lg text-center text-white font-semibold transition-transform duration-300 transform hover:scale-105">
+                  <img src="assets/css-3.png" alt="CSS Logo" class="w-24 h-24 mx-auto mb-2 hover:filter-none filter grayscale">
+                  CSS
+                </div>
+                <div class="bg-transparent border-2 border-teal-500 p-4 rounded-lg shadow-lg text-center text-white font-semibold transition-transform duration-300 transform hover:scale-105">
+                  <img src="assets/js.png" alt="JavaScript Logo" class="w-24 h-24 mx-auto mb-2 hover:filter-none filter grayscale">
+                  JavaScript
+                </div>
+              </div>
+            <!-- cards 2 -->
+            <div class="grid grid-cols-3 gap-5 mt-4">
+              <div class="bg-transparent border-2 border-teal-500 p-4 rounded-lg shadow-lg text-center text-white font-semibold transition-transform duration-300 transform hover:scale-105">
+                <img src="assets/php.png" alt="HTML Logo" class="w-24 h-24 mx-auto mb-2 hover:filter-none filter grayscale transition-transform duration-300 transform hover:scale-110">
+                PHP
+              </div>
+              <div class="bg-transparent border-2 border-teal-500 p-4 rounded-lg shadow-lg text-center text-white font-semibold transition-transform duration-300 transform hover:scale-105">
+                <img src="assets/logo-tailwind.webp" alt="HTML Logo" class="w-24 h-24 mx-auto mb-2 hover:filter-none filter grayscale transition-transform duration-300 transform hover:scale-110">
+                TAILWIND
+              </div>
+              <div class="bg-transparent border-2 border-teal-500 p-4 rounded-lg shadow-lg text-center text-white font-semibold transition-transform duration-300 transform hover:scale-105">
+                <img src="assets/bootstrap.png" alt="HTML Logo" class="w-24 h-24 mx-auto mb-2 hover:filter-none filter grayscale transition-transform duration-300 transform hover:scale-110">
+                BOOTSTRAP
+              </div>
+            </div>
+        </section>
+       <!-- skils end -->
+      <!-- portfolio -->
+        <section id="portfolio">
+          <div class="container h-auto flex justify-center items-center flex-col">
+            <div class="w-[50rem] h-auto">
+              <div class="grid grid-cols-1 justify-items-center h-auto mb-4">
+                <h1 class="font-bold text-slate-50 text-3xl">My latest projects</h1>
+              </div>
+              <!-- cards 1 -->
+              <div class="grid grid-cols-2 justify-items-center mb-5">
+                <!-- portfolio1 -->
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 ">
+                  <a href="#">
+                    <img class="rounded-t-lg" src="assets/website-aki.png" alt="" />
+                  </a>
+                  <div class="p-5">
+                    <a href="#">
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Landing page UMKM</h5>
+                    </a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition-transform duration-300 transform hover:scale-105 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-400 dark:hover:bg-teal-500 dark:focus:ring-teal-600">
+                      View More
+                      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- portfolio2 -->
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                  <a href="#">
+                    <img class="rounded-t-lg" src="assets/restaurant-web.png" alt="" />
+                  </a>
+                  <div class="p-5">
+                    <a href="#">
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Landing page restaurant</h5>
+                    </a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition-transform duration-300 transform hover:scale-105 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-400 dark:hover:bg-teal-500 dark:focus:ring-teal-600">
+                      View More
+                      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- cards 2 -->
+               <div class="grid grid-cols-2 justify-items-center ">
+                <!-- portfolio3 -->
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                  <a href="#">
+                    <img class="rounded-t-lg" src="assets/portfolio-first.png" alt="" />
+                  </a>
+                  <div class="p-5">
+                    <a href="#">
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">first portfolio</h5>
+                    </a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition-transform duration-300 transform hover:scale-105 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-400 dark:hover:bg-teal-500 dark:focus:ring-teal-600">
+                      View More
+                      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                <!-- portfolio4 -->
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow ">
+                  <a href="#">
+                    <img class="rounded-t-lg" src="assets/web-food.png" alt="" />
+                  </a>
+                  <div class="p-5">
+                    <a href="#">
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">food landing page</h5>
+                    </a>
+                    <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition-transform duration-300 transform hover:scale-105 focus:ring-4 focus:outline-none focus:ring-teal-300 dark:bg-teal-400 dark:hover:bg-teal-500 dark:focus:ring-teal-600">
+                      View More
+                      <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+               </div>
+            </div>
+          </div>
+        </section>
+       <!-- portfolio end -->
+        <!-- experience section-->
+        <section id="experience" class="mt-24" >
+          <div class="container h-auto px-24 py-20">
+            <div class="grid grid-cols-2">
+              <h1 class="font-bold text-slate-50 text-3xl"><span class="text-teal-400">Companies</span> i have worked for in the past</h1>
+            </div>
+            <div class="grid grid-cols-3 mt-5 gap-5">
+              <!-- cards -->
+              <div class=" text-slate-50">
+                <p class="text-8xl font-bold ">01</p>
+                <p class="font-semibold text-xl"><span class="text-teal-400">google</span>,fullstack developer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sequi!</p>
+              </div>
+              <div class=" text-slate-50">
+                <p class="text-8xl font-bold ">02</p>
+                <p class="font-semibold text-xl"><span class="text-teal-400">facebook</span>,fullstack  developer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sequi!</p>
+              </div>
+              <div class=" text-slate-50">
+                <p class="text-8xl font-bold ">03</p>
+                <p class="font-semibold text-xl"><span class="text-teal-400">Drible</span>,front end developer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, sequi!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+         <!-- experience end --> 
+          <!-- testimoni -->
+              <section class="my-24">
+                <div class="container p-20 h-auto">
+                  <div class="grid grid-cols-3 gap-4">
+                    <div class="text-slate-50">
+                      <p class="font-semibold text-teal-400 text-xl mb-2 ">testimonial</p>
+                      <h1 class="font-bold text-3xl mb-2">Client Testimonial</h1>
+                      <p class="text-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem assumenda reiciendis saepe voluptates repudiandae animi ea enim magni iure doloremque.</p>
+                    </div>
+                    <!--cards  -->
+                  <div class="bg-white bg-opacity-20 rounded-lg p-5 shadow-lg flex justify-center items-center flex-col transition-transform duration-300 transform hover:scale-105">
+                    <img class="rounded-full w-20 h-20" src="assets/testimonial1.jpg" alt="" />
+                    <p class="text-base  text-slate-50">- John Doe, CEO of Company-</p>
+                    <p class="text-xl font-semibold text-teal-400">"Layanan yang luar biasa!"</p>
+                  </div>
+                  <div class="bg-white bg-opacity-20 rounded-lg p-5 shadow-lg flex justify-center items-center flex-col transition-transform duration-300 transform hover:scale-105">
+                    <img class="rounded-full w-20 h-20" src="assets/testimonial2.jpg" alt="" />
+                    <p class="text-base text-slate-50">- Mulyono, CEO of Company-</p>
+                    <p class="text-xl font-semibold text-teal-400 text-center ">"Pengerjaan proyek yang cepat"</p>
+                  </div>
+                  </div>
+                </div>
+              </section>
+           <!-- testimoni end -->
+            <!-- footer -->
+            <footer >
+                <div
+                  class="border-t border-gray-100 pt-8 flex items-center justify-between  h-auto pb-5 px-24"
+                >
+                  <ul class="flex flex-wrap justify-center gap-4  text-xs">
+                    <li>
+                      <a href="#" class="text-slate-50 transition hover:opacity-75 text-md"> Terms & Conditions </a>
+                    </li>
+            
+                    <li>
+                      <a href="#" class="text-slate-50 transition hover:opacity-75"> Privacy Policy </a>
+                    </li>
+            
+                    <li>
+                      <a href="#" class="text-slate-50 transition hover:opacity-75"> Cookies </a>
+                    </li>
+                  </ul>
+            
+                  <ul class="mt-8 flex justify-center pb-8 gap-6 ">
+                    <li>
+                      <a href="#" rel="noreferrer" target="_blank" class="text-slate-50 transition hover:opacity-75">
+                        <span class="sr-only">TikTok</span>
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" rel="noreferrer" target="_blank" class="text-slate-50 transition hover:opacity-75">
+                        <span class="sr-only">Instagram</span>
+                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"/>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" rel="noreferrer" target="_blank" class="text-slate-50 transition hover:opacity-75">
+                        <span class="sr-only">GitHub</span>
+                        <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+             <!-- footer end -->
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+    let typing = new Typed(".typing", {
+      strings: [
+        "fullstack developer",
+        "UI/UX designer",
+      ],
+      typeSpeed: 65,
+      backSpeed: 65,
+      loop: true,
+      startDelay: 1000,
+      autoInsertCss: true,
+    });
+  });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+  </body>
+</html> 
